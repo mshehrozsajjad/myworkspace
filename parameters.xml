@@ -1,0 +1,14 @@
+<parameters>
+
+<parameter name="AppPath" defaultValue="application" tags="iisapp" > 
+<parameterEntry type="ProviderPath" scope="iisapp" match="application" /> 
+</parameter>
+
+<!—For every setAcl in the manifest.xml , create a matching parameter in the parameters.xml -->
+
+<parameter  name="SetAclParameter1"  defaultValue="{AppPath}/pictures/users"  tags="Hidden"> 
+<parameterEntry  type="ProviderPath" scope="setAcl"  match="application/pictures/users" /> 
+</parameter>
+
+
+</parameters>

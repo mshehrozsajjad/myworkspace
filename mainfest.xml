@@ -1,0 +1,15 @@
+<MSDeploy.iisApp>
+
+<iisApp path="application" /> 
+
+<!--DO NOT use  setAclUser for ASPNET  my-workspaces  -->
+
+
+<!--Use setAclUser=”anonymousAuthenticationUser" for PHP my-workspaces . The ACLs below are examples for setting ACLs for PHP my-workspaces  -->
+
+
+
+<setAcl  path="application/pictures/users" setAclResourceType="Directory"  setAclAccess="Modify"  setAclUser="anonymousAuthenticationUser" /> -->
+
+
+</MSDeploy.iisApp>
